@@ -1,0 +1,10 @@
+{"name": "Luis García", "alias": "El Probador", "testerId": 1},
+{"name": "Ana Martínez", "alias": "La Evaluadora", "testerId": 2},
+{"name": "Carlos Sánchez", "alias": "El Experimentador", "testerId": 3},
+{"name": "María López", "alias": "La Verificadora", "testerId": 4},
+{"name": "Javier Rodríguez", "alias": "El Inspector", "testerId": 5},
+{"name": "Laura Pérez", "alias": "La Analista", "testerId": 6},
+{"name": "Pedro Gómez", "alias": "El Revisor", "testerId": 7},
+{"name": "Sofía Fernández", "alias": "La Observadora", "testerId": 8},
+{"name": "Daniel Ruiz", "alias": "El Testeador", "testerId": 9},
+{"name": "Carmen Hernández", "alias": "La Controladora", "testerId": 10}
