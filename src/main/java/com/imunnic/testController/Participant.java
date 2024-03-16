@@ -39,14 +39,12 @@ public class Participant extends Person<Integer> implements Markable<Result>{
   }
 
   public Participant(String name, int dorsal, String alias) {
-    setName(name);
-    setAlias(alias);
+    this(name,alias);
     setDorsal(dorsal);
   }
   
   public Participant(String name, String alias,int dorsal, List<Result> results) {
-    super(name, alias);
-    setDorsal(dorsal);
+    this(name, dorsal, alias);
     setResults(results);
   }
 

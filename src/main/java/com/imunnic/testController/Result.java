@@ -33,9 +33,9 @@ public class Result {
   }
 
   public Result(Tester tester, Trial trial, int grossResult) {
-    this.tester = tester;
-    this.trial = trial;
-    this.grossResult = grossResult;
+    setTester(tester);
+    setTrial(trial);
+    setGrossResult(grossResult);
   }
 
   public int getResult() {

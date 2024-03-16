@@ -25,7 +25,7 @@ public class Tester extends Person<Integer> {
   }
 
   public Tester(String name, String alias,int testerId) {
-    super(name, alias);
+    this(name, alias);
     setTesterId(testerId);
   }
   
