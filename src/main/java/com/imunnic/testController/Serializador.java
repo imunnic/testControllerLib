@@ -20,11 +20,11 @@ public class Serializador {
 //    competicion1.setDescription("Carrera de pruebas físicas");
 //    competicion1.setDate(LocalDate.now().plusMonths(2));
 //    //añado las pruebas de la competición
-//    competicion1.getTrials().add(Trial.BURPEES);
-//    competicion1.getTrials().add(Trial.PUSH_UPS);
-//    competicion1.getTrials().add(Trial.PULL_UPS);
-//    competicion1.getTrials().add(Trial.RUN);
-//    competicion1.getTrials().add(Trial.DEVIL_PRESS);
+//    competicion1.getTrials().add(TrialPatriotRace.BURPEES);
+//    competicion1.getTrials().add(TrialPatriotRace.PUSH_UPS);
+//    competicion1.getTrials().add(TrialPatriotRace.PULL_UPS);
+//    competicion1.getTrials().add(TrialPatriotRace.RUN);
+//    competicion1.getTrials().add(TrialPatriotRace.DEVIL_PRESS);
 //    //compruebo la competición
 //    System.out.println(competicion1.toString());
 //    System.out.println("-------------");
@@ -92,18 +92,18 @@ public class Serializador {
 //    System.out.println("-------------"); 
 //    //compruebo que un juez pueda calificar a un participante
 //    //el juez califica una prueba de dominadas
-//    Result result1 = competicion1.getTesters().get(0).certifyResult(Trial.PULL_UPS, 10);
+//    Result result1 = competicion1.getTesters().get(0).certifyResult(TrialPatriotRace.PULL_UPS, 10);
 //    competicion1.getTesters().get(0).asignResult(competicion1.getParticipants().get(0), result1);
 //    //compruebo que se ha agregado el resultado al participante
 //    System.out.println(competicion1.getParticipants().get(0).getResults().toString());
 //    //añadimos todos los resultados de la prueba
-//    result1 = competicion1.getTesters().get(0).certifyResult(Trial.PUSH_UPS, 30);
+//    result1 = competicion1.getTesters().get(0).certifyResult(TrialPatriotRace.PUSH_UPS, 30);
 //    competicion1.getTesters().get(0).asignResult(competicion1.getParticipants().get(0), result1);
-//    result1 = competicion1.getTesters().get(1).certifyResult(Trial.DEVIL_PRESS, 5);
+//    result1 = competicion1.getTesters().get(1).certifyResult(TrialPatriotRace.DEVIL_PRESS, 5);
 //    competicion1.getTesters().get(1).asignResult(competicion1.getParticipants().get(0), result1);
-//    result1 = competicion1.getTesters().get(2).certifyResult(Trial.BURPEES, 15);
+//    result1 = competicion1.getTesters().get(2).certifyResult(TrialPatriotRace.BURPEES, 15);
 //    competicion1.getTesters().get(2).asignResult(competicion1.getParticipants().get(0), result1);
-//    result1 = competicion1.getTesters().get(3).certifyResult(Trial.RUN, 33);
+//    result1 = competicion1.getTesters().get(3).certifyResult(TrialPatriotRace.RUN, 33);
 //    competicion1.getTesters().get(3).asignResult(competicion1.getParticipants().get(0), result1);
 //    System.out.println("-------------"); 
 //    competicion1.getParticipants().get(0).getResults().forEach(System.out::println);
@@ -113,15 +113,15 @@ public class Serializador {
 //    System.out.println(competicion1.getMark(competicion1.getParticipants().get(0)));
 //    System.out.println("-------------"); 
 //    //Vamos a añadir los datos a otro participante
-//    Result result2 = competicion1.getTesters().get(0).certifyResult(Trial.PULL_UPS, 15);
+//    Result result2 = competicion1.getTesters().get(0).certifyResult(TrialPatriotRace.PULL_UPS, 15);
 //    competicion1.getTesters().get(0).asignResult(competicion1.getParticipants().get(1), result2);
-//    result2 = competicion1.getTesters().get(0).certifyResult(Trial.PUSH_UPS, 34);
+//    result2 = competicion1.getTesters().get(0).certifyResult(TrialPatriotRace.PUSH_UPS, 34);
 //    competicion1.getTesters().get(0).asignResult(competicion1.getParticipants().get(1), result2);
-//    result2 = competicion1.getTesters().get(1).certifyResult(Trial.DEVIL_PRESS, 3);
+//    result2 = competicion1.getTesters().get(1).certifyResult(TrialPatriotRace.DEVIL_PRESS, 3);
 //    competicion1.getTesters().get(1).asignResult(competicion1.getParticipants().get(1), result2);
-//    result2 = competicion1.getTesters().get(2).certifyResult(Trial.BURPEES, 20);
+//    result2 = competicion1.getTesters().get(2).certifyResult(TrialPatriotRace.BURPEES, 20);
 //    competicion1.getTesters().get(2).asignResult(competicion1.getParticipants().get(1), result2);
-//    result2 = competicion1.getTesters().get(3).certifyResult(Trial.RUN, 30);
+//    result2 = competicion1.getTesters().get(3).certifyResult(TrialPatriotRace.RUN, 30);
 //    competicion1.getTesters().get(3).asignResult(competicion1.getParticipants().get(1), result2);
 //    //ordenamos los participantes y mostramos por pantalla para ver que el segundo va antes que el primero
 //    competicion1.sort();
