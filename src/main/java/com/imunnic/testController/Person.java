@@ -2,8 +2,8 @@ package com.imunnic.testController;
 
 import java.io.Serializable;
 
-public abstract class Person<T extends Serializable> implements Identificable<T>{
-
+public class Person<T extends Serializable> implements Identificable<T>{
+  private T id;
   private String name;
   private String alias;
 
@@ -23,6 +23,15 @@ public abstract class Person<T extends Serializable> implements Identificable<T>
     this.alias = alias;
   }
   
+  public void setId(T id) {
+    this.id = id;
+  }
+
+  @Override
+  public T getId() {
+    return this.id;
+  }
+  
   public Person() {
   }
   
@@ -30,6 +39,7 @@ public abstract class Person<T extends Serializable> implements Identificable<T>
     setName(name);
     setAlias(alias);
   }
+
   
   
   

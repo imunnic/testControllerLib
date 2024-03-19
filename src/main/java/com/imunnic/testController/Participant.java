@@ -3,9 +3,19 @@ package com.imunnic.testController;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Participant extends Person<Integer> implements Markable<Result>{
-  private int dorsal;
+public class Participant implements Markable<Result>, Identificable<Long> {
+  private Long id;
+  private Person<Long> person;
   private List<Result> results;
+  private Integer dorsal;
+
+  public void setPerson(Person<Long> person) {
+    this.person = person;
+  }
+
+  public Person<Long> getPerson() {
+    return person;
+  }
 
   public int getDorsal() {
     return dorsal;
@@ -18,33 +28,27 @@ public class Participant extends Person<Integer> implements Markable<Result>{
   public List<Result> getResults() {
     return results;
   }
-  
+
   public void setResults(List<Result> results) {
     this.results = results;
   }
-  
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
   @Override
-  public Integer getId() {
-    return getDorsal();
+  public Long getId() {
+    return getId();
   }
 
   public Participant() {
-    super();
     setResults(new ArrayList<Result>());
   }
 
-  public Participant(String name, String alias) {
-    super(name, alias);
-    setResults(new ArrayList<Result>());
-  }
-
-  public Participant(String name, int dorsal, String alias) {
-    this(name,alias);
+  public Participant(Person<Long> person, Integer dorsal, List<Result> results) {
+    setPerson(person);
     setDorsal(dorsal);
-  }
-  
-  public Participant(String name, String alias,int dorsal, List<Result> results) {
-    this(name, dorsal, alias);
     setResults(results);
   }
 
@@ -52,10 +56,9 @@ public class Participant extends Person<Integer> implements Markable<Result>{
   public int getMark(Result result) {
     return result.getResult();
   }
-  
+
   @Override
   public String toString() {
-    // TODO Auto-generated method stub
-    return getDorsal() + ":" + getName() + " - " + getAlias();
+    return getDorsal() + ":" + getPerson().getName() + " - " + getPerson().getAlias();
   }
 }
