@@ -39,7 +39,7 @@ public class Participant implements Markable<Result>, Identificable<Long> {
 
   @Override
   public Long getId() {
-    return getId();
+    return id;
   }
 
   public Participant() {
